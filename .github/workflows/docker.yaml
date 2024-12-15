@@ -1,9 +1,12 @@
 name: docker
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   docker:
