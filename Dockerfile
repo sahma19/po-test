@@ -1,4 +1,4 @@
-FROM golang:1.23.4 as build
+FROM golang:1.23.5 as build
 
 RUN apt-get update && \
     apt-get install -y ca-certificates libssl-dev cpio
